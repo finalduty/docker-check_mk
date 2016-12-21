@@ -7,7 +7,7 @@ RUN yum install -y https://mathias-kettner.de/support/1.2.8p15/check-mk-raw-1.2.
 RUN yum install -y openssh-clients; yum update -y; #yum clean all -q -y
 
 RUN site='cmk'; \
-    omd create $site --no-init -u1000 -g1000; #\
+    omd create $site --no-init -u1000 -g1000; #
 #    omd config $site set APACHE_TCP_ADDR 0.0.0.0; \
 #    omd config $site set DEFAULT_GUI check_mk; \
 #    omd config $site set TMPFS off; \
