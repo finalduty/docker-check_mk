@@ -15,4 +15,4 @@ RUN site='cmk'; \
     omd config $site set TMPFS off; \
 #    omd start 
 
-CMD omd upgrade cmk; omd start; /bin/bash
+CMD omd update cmk; omd start; /bin/bash
